@@ -304,7 +304,7 @@ $success:       #AC8A46 !default; //$green !default;
 $info:          #E0E0E0 !default; //$cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $white !default;//$gray-100 !default;
 $dark:          $black !default; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -317,7 +317,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -651,12 +651,12 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size,//40px
+  2: $h2-font-size,//32px
+  3: $h3-font-size,//28px
+  4: $h4-font-size,//24px
+  5: $h5-font-size,//20px
+  6: $h6-font-size //16px
 ) !default;
 // scss-docs-end font-sizes
 

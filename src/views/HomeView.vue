@@ -1,35 +1,22 @@
 <script setup>
-import HelloWorld from '@/components/HelloWorld.vue';
+import HomeBanner from '@/components/home/banner.vue';
+import HomeSection1 from '@/components/home/section1.vue';
 
 </script>
 
 <template>
-  <main class="container">
-    <div>
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="logo" alt="Vite logo" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="@/assets/images/vue.svg" class="logo vue" alt="Vue logo" />
-      </a>
-    </div>
-    <HelloWorld msg="Vite + Vue + BS5" />
+  <main>
+    <HomeBanner />
+    <HomeSection1 />
   </main>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+.section1 ul>li:nth-child(2) div.img-order {
+  order: -1;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.section1 ul>li:nth-child(3) img.img-type1 {
+  object-position: 20%;
 }
 </style>
