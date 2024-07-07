@@ -2,11 +2,10 @@
 
 <template>
     <section class="banner">
-        <div class="position-ralative">
+        <div>
             <img src="@/assets/images/home/banner.jpg" alt="" />
         </div>
-        <div
-            class="text-area-wrap container end-0 position-absolute start-0 d-flex align-items-center justify-content-center justify-content-lg-end">
+        <div class="text-area-wrap container d-flex align-items-center justify-content-center justify-content-lg-end">
             <div class="text-area text-white">
                 <h1 class="fw-bold">Perfume your day</h1>
                 <p class="fs-4 mb-3">A perfume is like a piece of clothing, a message, a way of presenting oneself a
@@ -20,15 +19,22 @@
 </template>
 
 <style scoped>
-.banner img {
-    object-fit: cover;
-    width: 100%;
-    height: 480px;
+.banner {
+    position: relative;
 }
 
 .banner .text-area-wrap {
     height: 480px;
-    top: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 480px;
 }
 
 .banner .text-area {
