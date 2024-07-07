@@ -15,6 +15,10 @@
 </template>
 
 <style scoped>
+.pagination li>a:hover {
+    color: #AC8A46;
+}
+
 .pagination li.active>a {
     color: #AC8A46;
 }

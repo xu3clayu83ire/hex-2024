@@ -10,7 +10,9 @@ const items = ref([
     <section class="header-sub bg-primary">
         <div class="container">
             <ul class="d-flex py-3">
-                <li v-for=" (item, index) in items" :key="index" class="fs-5 text-white">{{ item }}</li>
+                <li v-for=" (item, index) in items" :key="index" class="">
+                    <a href="#" class="text-white fs-5"> {{ item }}</a>
+                </li>
             </ul>
         </div>
     </section>

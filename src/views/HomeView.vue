@@ -1,33 +1,33 @@
 <script setup>
 import HomeBanner from '@/components/home/banner.vue';
-import HomeSection1 from '@/components/home/section1.vue';
-import HomeSection2 from '@/components/home/section2.vue';
-import HomeSection3 from '@/components/home/section3.vue';
+import HomeSectionInfo from '@/components/home/sectionInfo.vue';
+import HomeSectionProduct from '@/components/home/sectionProduct.vue';
+import HomeSectionIntro from '@/components/home/sectionIntro.vue';
 </script>
 
 <template>
   <main class="mb-9 mb-lg-13">
     <HomeBanner />
-    <HomeSection1 class="mt-9 mt-lg-13" />
-    <HomeSection2 class="mt-9 mt-lg-13" />
-    <HomeSection3 class="mt-9 mt-lg-13" />
+    <HomeSectionInfo class="mt-9 mt-lg-13" />
+    <HomeSectionProduct class="mt-9 mt-lg-13" />
+    <HomeSectionIntro class="mt-9 mt-lg-13" />
   </main>
 </template>
 
 <style>
-.section1 ul>li:nth-child(2) div.img-order {
+.section-info ul>li:nth-child(2) div.img-order {
   order: -1;
 }
 
-.section1 ul>li:nth-child(3) img.img-setting1 {
+.section-info ul>li:nth-child(3) img.img-setting1 {
   object-position: 20%;
 }
 
-.section3 ul>li:nth-child(1) div.img-order {
+.section-intro ul>li:nth-child(1) div.img-order {
   order: -1;
 }
 
-.section3 ul>li:nth-child(1) img.img-setting1 {
+.section-intro ul>li:nth-child(1) img.img-setting1 {
   object-fit: cover;
   max-width: 730px;
   width: 100%;
@@ -35,7 +35,7 @@ import HomeSection3 from '@/components/home/section3.vue';
 }
 
 @media (min-width: 992px) {
-  .section3 ul>li:nth-child(1) img.img-setting1 {
+  .section-intro ul>li:nth-child(1) img.img-setting1 {
     object-fit: cover;
     max-width: 730px;
     width: 100%;

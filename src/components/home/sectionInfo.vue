@@ -2,10 +2,10 @@
 import { ref } from 'vue';
 import ItemType1 from '@/components/common/item/type1.vue';
 
-import img1 from '@/assets/images/home/section1/index1.jpg';
-import img2 from '@/assets/images/home/section1/index2.png';
-import img3 from '@/assets/images/home/section1/index3.jpg';
-import img4 from '@/assets/images/home/section1/index4.jpg';
+import img1 from '@/assets/images/home/section-info/index1.jpg';
+import img2 from '@/assets/images/home/section-info/index2.png';
+import img3 from '@/assets/images/home/section-info/index3.jpg';
+import img4 from '@/assets/images/home/section-info/index4.jpg';
 
 const data1 = ref([
     {
@@ -49,7 +49,7 @@ const data2 = ref([
 </script>
 
 <template>
-    <section class="section1">
+    <section class="section-info">
         <div class="container">
             <ul class="row row-gap-7 row-gap-lg-0 d-flex justify-content-center">
                 <li v-for=" data in data1" :key="data.id" class="col-12">
@@ -59,7 +59,7 @@ const data2 = ref([
                     <div class="row">
                         <div class="col-12 col-lg-6 px-0">
                             <div class="text-center">
-                                <img class="img-setting2" :src="img4" alt="" />
+                                <img class="img-last-setting" :src="img4" alt="" />
                             </div>
                         </div>
                         <div class="col align-items-center d-flex justify-content-center">
@@ -85,7 +85,7 @@ const data2 = ref([
 </template>
 
 <style scoped>
-.img-setting2 {
+.img-last-setting {
     object-fit: cover;
     max-width: 345px;
     width: 100%;
@@ -97,7 +97,7 @@ const data2 = ref([
 }
 
 @media (min-width: 992px) {
-    .img-setting2 {
+    .img-last-setting {
         object-fit: cover;
         max-width: 555px;
         width: 100%;

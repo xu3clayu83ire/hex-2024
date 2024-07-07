@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-import productCard2 from '@/components/common/card/product2.vue';
+import productCardLg from '@/components/common/card/productLg.vue';
 
-import img1 from '@/assets/images/home/section2/index1.jpg';
-import img2 from '@/assets/images/home/section2/index2.jpg';
-import img3 from '@/assets/images/home/section2/index3.jpg';
+import img1 from '@/assets/images/home/section-product/index1.jpg';
+import img2 from '@/assets/images/home/section-product/index2.jpg';
+import img3 from '@/assets/images/home/section-product/index3.jpg';
 
 const datas = ref([
     {
@@ -35,11 +35,11 @@ const datas = ref([
 </script>
 
 <template>
-    <section class="section2 bg-info">
+    <section class="section-product bg-info">
         <div class="container py-7 py-lg-9">
             <ul class="row row-cols-1 row-cols-lg-3 row-gap-7 row-gap-lg-0 d-flex justify-content-center">
                 <li v-for="data in datas" :key="data.id" class="d-flex justify-content-center">
-                    <productCard2 :data="data" />
+                    <productCardLg :data="data" />
                 </li>
             </ul>
         </div>

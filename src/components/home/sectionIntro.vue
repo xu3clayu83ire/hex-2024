@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import ItemType1 from '@/components/common/item/type1.vue';
-import img1 from '@/assets/images/home/section3/index1.jpg';
+import img1 from '@/assets/images/home/section-intro/index1.jpg';
 const datas = ref([{
     id: 1,
     imageUrl: img1,
@@ -12,7 +12,7 @@ const datas = ref([{
 </script>
 
 <template>
-    <section class="section3">
+    <section class="section-intro">
         <div class="container">
             <ul>
                 <li v-for=" data in datas" :key="data.id">

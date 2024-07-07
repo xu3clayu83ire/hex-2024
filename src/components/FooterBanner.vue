@@ -7,12 +7,11 @@
             <div class="text-area">
                 <h2 class="fw-bold text-secondary mb-4">記得<br>訂閱以獲取更多資訊！</h2>
                 <div class="border border-2 border-primary d-flex rounded-2">
-                    <div class="bg-white w-100 text-secondary py-3 px-5 rounded-start-2">
-                        Your email addresss
-                    </div>
-                    <div class="bg-primary text-white py-3 px-4">
-                        Subscribe
-                    </div>
+                    <form class="d-flex w-100">
+                        <input class="form-control py-3 px-5 rounded-end-0 me-0 w-100" type="text"
+                            placeholder="Your email addresss" aria-label="Search">
+                        <button class="btn btn-primary py-3 px-4 rounded-start-0" type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>

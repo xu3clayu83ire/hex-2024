@@ -5,9 +5,9 @@ const data = props.data;
 
 <template>
     <div class="product-card">
-        <div>
+        <a href="#">
             <img class="img-setting" :src="data.imageUrl" alt="" />
-        </div>
+        </a>
         <div>
             <h3 class="mt-1">{{ data.name }}</h3>
             <p class="mb-2">{{ data.brand }}</p>

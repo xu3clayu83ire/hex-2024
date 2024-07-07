@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import HeaderSub from '@/components/HeaderSub.vue';
 import Pagination from '@/components/Pagination.vue';
-import productCard from '@/components/common/card/product.vue';
+import productCardSm from '@/components/common/card/productSm.vue';
 
 import p1 from '@/assets/images/product/p1.jpg';
 import p2 from '@/assets/images/product/p2.jpg';
@@ -124,7 +124,7 @@ const datas = ref([
         <div class="container mt-9 mt-lg-15">
             <ul class="row row-cols-lg-4 row-cols-2 row-gap-6 row-gap-lg-13">
                 <li v-for=" (item, index) in datas" :key="index">
-                    <productCard :data="item" />
+                    <productCardSm :data="item" />
                 </li>
             </ul>
             <Pagination class="mt-9 mt-lg-15" />
