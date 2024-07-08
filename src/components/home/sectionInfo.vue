@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import ItemType1 from '@/components/common/item/type1.vue';
+import ItemRowType from '@/components/common/item/rowType.vue';
 
 import img1 from '@/assets/images/home/section-info/index1.jpg';
 import img2 from '@/assets/images/home/section-info/index2.png';
@@ -53,7 +53,7 @@ const data2 = ref([
         <div class="container">
             <ul class="row row-gap-7 row-gap-lg-0 d-flex justify-content-center">
                 <li v-for=" data in data1" :key="data.id" class="col-12">
-                    <ItemType1 :data="data" />
+                    <ItemRowType :data="data" />
                 </li>
                 <li class="col-12">
                     <div class="row">

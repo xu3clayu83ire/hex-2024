@@ -3,7 +3,7 @@
         <div>
             <img src="@/assets/images/footer-banner.jpg" alt="" />
         </div>
-        <div class="text-area-wrap container d-flex align-items-center">
+        <div class="text-area-wrapper container">
             <div class="text-area">
                 <h2 class="fw-bold text-secondary mb-4">記得<br>訂閱以獲取更多資訊！</h2>
                 <div class="border border-2 border-primary d-flex rounded-2">
@@ -29,7 +29,7 @@
     height: 600px;
 }
 
-.footer-banner .text-area-wrap {
+.footer-banner .text-area-wrapper {
     height: 600px;
     position: absolute;
     left: 0;
@@ -37,9 +37,11 @@
     top: 0;
 }
 
-.footer-banner .text-area {
+.footer-banner .text-area-wrapper .text-area {
     max-width: 345px;
     width: 100%;
+    position: absolute;
+    bottom: 25%;
 }
 
 @media (min-width: 992px) {

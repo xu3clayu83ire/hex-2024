@@ -29,7 +29,7 @@ import { RouterLink } from 'vue-router'
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <RouterLink class="nav-link text-secondary fs-5" aria-current="page"
+                        <RouterLink class="nav-link link-secondary fs-5" aria-current="page"
                             :to="{ name: 'productList' }">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                                 fill="#8D8D8D">
@@ -40,7 +40,7 @@ import { RouterLink } from 'vue-router'
                         </RouterLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary fs-5" href="#">
+                        <a class="nav-link link-secondary fs-5" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                                 fill="#8D8D8D">
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -50,7 +50,7 @@ import { RouterLink } from 'vue-router'
                             log in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary fs-5" href="#">
+                        <a class="nav-link link-secondary fs-5" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                                 fill="#8D8D8D">
                                 <path d="M0 0h24v24H0z" fill="none" />
@@ -60,7 +60,7 @@ import { RouterLink } from 'vue-router'
                             Wishlist</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary fs-5" href="#">
+                        <a class="nav-link link-secondary fs-5" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
                                 fill="#8D8D8D">
                                 <path d="M0 0h24v24H0z" fill="none" />

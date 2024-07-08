@@ -5,9 +5,12 @@ const data = props.data;
 
 <template>
     <div class="product-card">
-        <a href="#">
+        <div class="product-img-wrapper">
             <img class="img-setting" :src="data.imageUrl" alt="" />
-        </a>
+            <div class="img-mask">
+                <span>商品詳情</span>
+            </div>
+        </div>
         <div>
             <h3 class="mt-1">{{ data.name }}</h3>
             <p class="mb-2">{{ data.brand }}</p>
@@ -39,6 +42,32 @@ const data = props.data;
     height: 350px;
 }
 
+.product-card .product-img-wrapper {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product-card .product-img-wrapper .img-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(101, 101, 101, 0.5);
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.product-card .product-img-wrapper:hover .img-mask {
+    opacity: 1;
+}
+
+.product-card .product-img-wrapper .img-mask>span {
+    line-height: 350px;
+}
+
 @media (min-width: 992px) {
     .product-card {
         max-width: 344px;
@@ -51,6 +80,10 @@ const data = props.data;
     .product-card .img-setting {
         max-width: 350px;
         height: 540px;
+    }
+
+    .product-card .product-img-wrapper .img-mask>span {
+        line-height: 540px;
     }
 }
 </style>

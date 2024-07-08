@@ -19,7 +19,7 @@ import HomeSectionIntro from '@/components/home/sectionIntro.vue';
   order: -1;
 }
 
-.section-info ul>li:nth-child(3) img.img-setting1 {
+.section-info ul>li:nth-child(3) img.img-setting {
   object-position: 20%;
 }
 
@@ -27,7 +27,7 @@ import HomeSectionIntro from '@/components/home/sectionIntro.vue';
   order: -1;
 }
 
-.section-intro ul>li:nth-child(1) img.img-setting1 {
+.section-intro ul>li:nth-child(1) img.img-setting {
   object-fit: cover;
   max-width: 730px;
   width: 100%;
@@ -35,7 +35,7 @@ import HomeSectionIntro from '@/components/home/sectionIntro.vue';
 }
 
 @media (min-width: 992px) {
-  .section-intro ul>li:nth-child(1) img.img-setting1 {
+  .section-intro ul>li:nth-child(1) img.img-setting {
     object-fit: cover;
     max-width: 730px;
     width: 100%;

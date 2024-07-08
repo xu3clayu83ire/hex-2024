@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import ItemType1 from '@/components/common/item/type1.vue';
+import ItemRowType from '@/components/common/item/rowType.vue';
 import img1 from '@/assets/images/home/section-intro/index1.jpg';
 const datas = ref([{
     id: 1,
@@ -16,7 +16,7 @@ const datas = ref([{
         <div class="container">
             <ul>
                 <li v-for=" data in datas" :key="data.id">
-                    <ItemType1 :data="data" />
+                    <ItemRowType :data="data" />
                 </li>
             </ul>
         </div>
