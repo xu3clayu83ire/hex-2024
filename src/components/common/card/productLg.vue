@@ -13,7 +13,7 @@ const data = props.data;
         </div>
         <div>
             <h3 class="mt-1">{{ data.name }}</h3>
-            <p class="mb-2">{{ data.brand }}</p>
+            <p class="mb-1 mb-lg-3">{{ data.brand }}</p>
             <p class="product-price">
                 <span v-show="data.discountPrice">
                     NT${{ data.discountPrice == '' ? data.originPrice : data.discountPrice }}</span>

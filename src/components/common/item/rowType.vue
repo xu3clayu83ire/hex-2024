@@ -8,9 +8,9 @@ const data = props.data;
         <div class="col align-items-center d-flex justify-content-center px-lg-0">
             <div class="text-area mt-1 mt-lg-0">
                 <h2 class="fs-2 fw-bold">{{ data.title }}</h2>
-                <p class="fs-5 mb-lg-2 mb-1">{{ data.titleSub }}</p>
+                <p class="fs-5 mb-1 mb-lg-3">{{ data.titleSub }}</p>
                 <p class="fs-6">{{ data.description }}</p>
-                <a class="mt-lg-2 mt-1 link-primary fs-6 fw-medium" href="#">查看更多</a>
+                <p class="mt-1 mt-lg-3"><a class="link-primary fs-6 fw-bold" href="#">查看更多</a></p>
             </div>
         </div>
         <div class="img-order col-12 col-lg-6 px-lg-0">

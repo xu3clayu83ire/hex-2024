@@ -31,17 +31,17 @@ const data1 = ref([
 const data2 = ref([
     {
         id: 1,
-        title: '1. Levels of Preventive Maintenance Compliance',
+        title: 'Levels of Preventive Maintenance Compliance',
         description: 'The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.'
     },
     {
         id: 2,
-        title: '2. Percentage of Planned Maintenance',
+        title: 'Percentage of Planned Maintenance',
         description: 'The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.'
     },
     {
         id: 3,
-        title: '3. Critical percentage of planned maintenance',
+        title: 'Critical percentage of planned maintenance',
         description: 'Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.'
     }
 ]);
@@ -66,7 +66,7 @@ const data2 = ref([
                             <ul class="text-area mt-1 mt-lg-0">
                                 <li v-for="data in data2" :key="data.id" class="mb-4">
                                     <div>
-                                        <h2 class="fs-5 fw-bold">{{ data.title }}</h2>
+                                        <h2 class="fs-5 fw-bold">{{ data.id }}.<br>{{ data.title }}</h2>
                                         <p>{{ data.description }}</p>
                                     </div>
                                 </li>
